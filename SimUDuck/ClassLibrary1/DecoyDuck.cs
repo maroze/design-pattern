@@ -6,12 +6,11 @@ using System.Threading.Tasks;
 
 namespace SimUDuck
 {
-    public abstract class Duck
+    public class DecoyDuck: Duck
     {
-        public string swim()
+        public override string display()
         {
-            return "Бульк " + this.GetType();
+            return "Деревянная утка-приманка " + this.GetType();
         }
-        public abstract string display();
     }
 }
