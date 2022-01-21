@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace SimUDuck
 {
-    public interface Flyable
+    public interface FlyBehavior
     {
-        string fly();
+        string Fly();
     }
 }

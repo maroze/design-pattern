@@ -6,15 +6,19 @@ using System.Threading.Tasks;
 
 namespace SimUDuck
 {
-    public class RubberDuck: Duck, Quackable
+    public class RubberDuck: Duck
     {
-        public override string display()
+        public RubberDuck()
         {
-            return "Резиновая утка " + this.GetType();
+            flyBehavior = new FlyNoWay();
+            quackBehavior = new Squeak();
         }
-        public string quack()
+        public override string Display()
         {
-            return "Кря " + this.GetType();
+            return "Резиновая утка " ;
         }
+        //public RubberDuck() : base(new FlyNoWay(), new Squeak())
+        //{
+        //}
     }
 }
