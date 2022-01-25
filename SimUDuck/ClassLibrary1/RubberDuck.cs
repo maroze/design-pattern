@@ -15,7 +15,7 @@ namespace SimUDuck
         }
         public override string Display()
         {
-            return "Резиновая утка " ;
+            return "Резиновая утка " + flyBehavior.Fly() + quackBehavior.Quack() + GetType();
         }
         //public RubberDuck() : base(new FlyNoWay(), new Squeak())
         //{

@@ -18,7 +18,7 @@ namespace SimUDuck
         //}
         public override string Display()
         {
-            return "Деревянная утка-приманка ";
+            return "Деревянная утка-приманка " + flyBehavior.Fly() + quackBehavior.Quack() + GetType();
         }
     }
 }

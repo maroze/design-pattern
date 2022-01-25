@@ -19,8 +19,6 @@ namespace SimUDuck
             {
                 Console.WriteLine($"{d.Swim()}");
                 Console.WriteLine($"{d.Display()}");
-                Console.WriteLine($"{d.Quack()}");
-                Console.WriteLine($"{d.Fly()}");
             }
                 Console.ReadLine();
 

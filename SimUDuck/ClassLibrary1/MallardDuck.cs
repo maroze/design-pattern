@@ -18,7 +18,7 @@ namespace SimUDuck
         //}
         public override string Display()
         {
-            return "Кряква ";
+            return "Кряква " + flyBehavior.Fly() + quackBehavior.Quack() + GetType();
         }
     }
 }

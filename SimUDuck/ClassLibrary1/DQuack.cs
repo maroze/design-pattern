@@ -10,7 +10,7 @@ namespace SimUDuck
     {
         public string Quack()
         {
-            return "Кря кря кря";
+            return "Кря кря кря ";
         }
     }
 }

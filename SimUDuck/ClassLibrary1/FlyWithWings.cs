@@ -10,7 +10,7 @@ namespace SimUDuck
     {
         public string Fly()
         {
-            return "Хлоп хлоп хлоп";
+            return "Хлоп хлоп хлоп ";
         }
     }
 }
