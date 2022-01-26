@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace SimUDuck
 {
-    public class ReadheaddDuck : Duck
+    public class FlyWithWings : FlyBehavior
     {
-        public override string display()
+        public string Fly()
         {
-            return "Красно-головая " + this.GetType();
+            return "Хлоп хлоп хлоп ";
         }
     }
 }
