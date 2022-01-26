@@ -8,34 +8,29 @@ namespace SimUDuck
 {
     public abstract class Duck
     {
-        public QuackBehavior quackBehavior { get; set; }
-        public FlyBehavior flyBehavior { get; set; }
-        //protected Duck(FlyBehavior flyBehavior, QuackBehavior quackBehavior)
-        //{
-        //    this.flyBehavior = flyBehavior;
-        //    this.quackBehavior = quackBehavior;
-        //}
+        protected QuackBehavior quackBehavior;
+        protected FlyBehavior flyBehavior;
         public string Swim()
         {
             return "Буль буль буль";
         }
         public abstract string Display();
-        public string performQuack()
+        public string PerformQuack()
         {
             return quackBehavior.Quack();
         }
-        public string performFly()
+        public string PerformFly()
         {
             return flyBehavior.Fly();
         }
-        //public void PerformFly()
-        //{
-        //    flyBehavior.Fly();
-        //}
+        public void SetFlyBehavior(FlyBehavior flyBehavior)
+        {
+            this.flyBehavior = flyBehavior;
+        }
 
-        //public void PerformQuack()
-        //{
-        //    quackBehavior.Quack();
-        //}
+        public void SetQuackBehavior(QuackBehavior quackBehavior)
+        {
+            this.quackBehavior = quackBehavior;
+        }
     }
 }

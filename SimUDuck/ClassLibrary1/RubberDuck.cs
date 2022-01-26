@@ -17,8 +17,5 @@ namespace SimUDuck
         {
             return "Резиновая утка " + flyBehavior.Fly() + quackBehavior.Quack() + GetType();
         }
-        //public RubberDuck() : base(new FlyNoWay(), new Squeak())
-        //{
-        //}
     }
 }

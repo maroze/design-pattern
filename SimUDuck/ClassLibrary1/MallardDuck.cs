@@ -13,9 +13,7 @@ namespace SimUDuck
             flyBehavior = new FlyWithWings();
             quackBehavior = new DQuack();
         }
-        //public MallardDuck() : base(new FlyWithWings(), new DQuack())
-        //{
-        //}
+
         public override string Display()
         {
             return "Кряква " + flyBehavior.Fly() + quackBehavior.Quack() + GetType();

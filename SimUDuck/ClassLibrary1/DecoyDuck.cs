@@ -13,9 +13,7 @@ namespace SimUDuck
             flyBehavior = new FlyNoWay();
             quackBehavior = new MuteQuack();
         }
-        //public DecoyDuck() : base(new FlyNoWay(), new MuteQuack())
-        //{
-        //}
+
         public override string Display()
         {
             return "Деревянная утка-приманка " + flyBehavior.Fly() + quackBehavior.Quack() + GetType();
