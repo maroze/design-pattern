@@ -17,8 +17,7 @@ namespace SimUDuck
             Duck[] strDuck = new Duck[] { duck1, duck2, duck3, duck4};
             foreach (Duck d in strDuck)
             {
-                Console.WriteLine($"{d.Swim()}");
-                Console.WriteLine($"{d.Display()}");
+                Console.WriteLine($"{d.Swim()}" + $"{d.Display()}");
             }
                 Console.ReadLine();
 

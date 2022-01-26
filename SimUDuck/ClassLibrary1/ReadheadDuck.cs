@@ -13,9 +13,7 @@ namespace SimUDuck
             flyBehavior = new FlyWithWings();
             quackBehavior = new DQuack();
         }
-        //public RedHeadDuck() : base(new FlyWithWings(), new DQuack())
-        //{
-        //}
+
         public override string Display()
         {
             return "Красно-головая " + flyBehavior.Fly() + quackBehavior.Quack() + GetType();
