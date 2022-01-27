@@ -23,14 +23,16 @@ namespace SimUDuck
         {
             return flyBehavior.Fly();
         }
-        public void SetFlyBehavior(FlyBehavior flyBehavior)
+        public FlyBehavior SetFlyBehavior(FlyBehavior flyBehavior)
         {
             this.flyBehavior = flyBehavior;
+            return flyBehavior;
         }
 
-        public void SetQuackBehavior(QuackBehavior quackBehavior)
+        public QuackBehavior SetQuackBehavior(QuackBehavior quackBehavior)
         {
             this.quackBehavior = quackBehavior;
+            return quackBehavior;
         }
     }
 }
