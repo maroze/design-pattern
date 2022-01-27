@@ -14,6 +14,8 @@ namespace SimUDuck
             Duck duck2 = new RedHeadDuck();
             Duck duck3 = new RubberDuck();
             Duck duck4 = new DecoyDuck();
+            FlyBehavior flyBehavior = new FlyNoWay();
+            duck1.SetFlyBehavior(flyBehavior);
             Duck[] strDuck = new Duck[] { duck1, duck2, duck3, duck4};
             foreach (Duck d in strDuck)
             {
